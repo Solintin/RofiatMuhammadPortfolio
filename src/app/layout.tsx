@@ -13,7 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Rofiat Muhammad Opemipo | Data Analyst & Analytics Engineer",
+  title: "RRofiat Muhammad - Data Analyst | Data Engineer | BI Analyst | SQL Expert Portfolio",
   description: "Professional portfolio of Rofiat Muhammad Opemipo. Specializing in Python, SQL databases, Power BI visualization, geospatial anomaly models, and data-driven business growth.",
   keywords: [
     "Data Analyst",
@@ -23,7 +23,13 @@ export const metadata: Metadata = {
     "Python Analyst",
     "Rofiat Muhammad Opemipo",
     "Data Storytelling",
-    "Dammam Saudi Arabia Data Analyst",
+    "Dammam Saudi Arabia Data Analyst | Engineer | BI Analyst | SQL Expert",
+    "Abuja Data Analyst | Engineer | BI Analyst | SQL Expert",
+    "Lagos Data Analyst | Engineer | BI Analyst | SQL Expert",
+    "Al-Kobar Data Analyst | Engineer | BI Analyst | SQL Expert",
+    "Jeddah Data Analyst | Engineer | BI Analyst | SQL Expert",
+    "Riyadh Data Analyst | Engineer | BI Analyst | SQL Expert",
+    "Khobar Data Analyst | Engineer | BI Analyst | SQL Expert",
     "Business Intelligence Specialist",
     "Portfolio"
   ],
@@ -37,9 +43,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og-image.png",
-        width: 1200,
-        height: 1200,
-        alt: "Rofiat Muhammad Opemipo - Data Analyst | Analytics Engineer Portfolio",
+        width: 984,
+        height: 562,
+        alt: "Rofiat Muhammad - Data Analyst | Data Engineer | BI Analyst | SQL Expert Portfolio",
       },
     ],
     locale: "en_US",
