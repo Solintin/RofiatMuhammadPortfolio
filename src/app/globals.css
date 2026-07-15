@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), sans-serif;
+  --font-display: var(--font-space-grotesk), sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+  --color-accent-pink: var(--accent-pink);
+  --color-accent-pink-hover: var(--accent-pink-hover);
+  --color-text-muted: var(--text-muted);
+}
+
+:root {
+  color-scheme: light dark;
+  scroll-behavior: smooth;
+  
+  --background: #fafafa;
+  --foreground: #09090b;
+  --card-bg: #ffffff;
+  --card-border: #f0f0f3;
+  --accent-pink: #ff2a74; /* Radiant Pink */
+  --accent-pink-hover: #e01a5d;
+  --text-muted: #71717a;
+}
+
+.dark {
+  --background: #0d0d0d;
+  --foreground: #ffffff;
+  --card-bg: #161616;
+  --card-border: #232323;
+  --accent-pink: #ff2a74;
+  --accent-pink-hover: #e01a5d;
+  --text-muted: #9e9e9e;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-card-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-pink);
+}
+
+/* Hide default input outline on focus but keep accessibility styling */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--color-accent-pink) !important;
+  box-shadow: 0 0 10px rgba(255, 42, 116, 0.15);
+}
+
+/* Modern Card Glow Utilities */
+.card-glow {
+  position: relative;
+  transition: all 0.3s ease;
+  background-color: var(--color-card-bg);
+  border-color: var(--color-card-border);
+}
+
+.card-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 15px rgba(255, 42, 116, 0);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card-glow:hover {
+  border-color: var(--color-accent-pink);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.dark .card-glow:hover {
+  box-shadow: none;
+}
+
+.card-glow:hover::after {
+  opacity: 0.05;
+  box-shadow: 0 0 25px rgba(255, 42, 116, 0.4);
+}
+
+/* Custom styles for navigation highlight */
+.nav-link-active {
+  color: var(--color-accent-pink) !important;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
