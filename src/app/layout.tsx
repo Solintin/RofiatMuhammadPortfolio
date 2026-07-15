@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Rofiat Muhammad Opemipo" }],
   creator: "Rofiat Muhammad Opemipo",
   openGraph: {
-    title: "Rofiat Muhammad Opemipo | Data Analyst & Analytics Engineer",
+    title: "Rofiat Muhammad - Data Analyst | Data Engineer | BI Analyst | SQL Expert Portfolio",
     description: "Transforming raw operational, marketing, and financial data into interactive dashboards, statistical anomaly models, and actionable business intelligence.",
     url: "https://rofiatmuhammad.com",
     siteName: "Rofiat Muhammad Portfolio",
